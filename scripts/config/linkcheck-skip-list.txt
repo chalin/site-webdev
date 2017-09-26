@@ -11,6 +11,10 @@
 # KNOWN ISSUES (to be investigated and/or resolved soon)
 # ------------
 
+# Temporary as we transition to angular_router 2:
+/api/angular_router/angular_router/Route-class
+/api/angular_router/angular_router/(ROUTER_DIRECTIVES|ROUTER_PRIMARY_COMPONENT|ROUTER_PROVIDERS)
+
 # Temporary as we transition to AngularDart 4 and docs under the doc repo folder:
 .*/go/angular-dart-docs/
 

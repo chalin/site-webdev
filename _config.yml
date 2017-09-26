@@ -66,10 +66,13 @@ defaults:
   values:
     diff2html: true
 - scope:
+    path: angular/guide/router
+  values:
+    status: '(Router 1.0.2)'
+- scope:
     path: angular/guide/testing
   values:
     status: '(DRAFT)'
-
 custom:
   dartpad:
     embed-dart-prefix: "https://dartpad.dartlang.org/embed-dart.html"
