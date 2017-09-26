@@ -20,7 +20,8 @@
     },
     "angular_router": {
       "doc-path": "angular/guide/router",
-      "vers": "1.0.2"
+      "prev-vers": "1.0.2",
+      "vers": "2.0.0-alpha"
     },
     "angular_test": {
         "doc-path": "angular/guide/testing/component",

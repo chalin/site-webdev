@@ -27,6 +27,17 @@ but you can see a preview at
 </aside>
 {% endcomment %}
 
+## Angular Router 2.0.0 (September 2017)
+
+- Updates to `pubspec.yaml`:
+  - `angular_router`: `^1.0.0` &rarr; `^2.0.0-alpha`
+- Dart file changes:
+  - `ROUTER_DIRECTIVES` &rarr; `routerDirectives`
+  - `ROUTER_PROVIDERS` &rarr; `routerProviders`,
+    and provide through [bootstrap][] (recommended)
+
+[bootstrap]: /api/angular/angular/bootstrap
+
 ## AngularDart 4.0.0 (August 2017)
 
 All pubspecs and imports changed, as well as API doc URLs,
