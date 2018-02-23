@@ -258,6 +258,28 @@ gulp.task('__test', () => {
   // Use to write experimental tasks.
 });
 
+var superstatic = require('superstatic');
+var browserSync = require('browser-sync').create();
+
+gulp.task('serve', () => {
+  let watchList = [
+    `${siteFolder}/**/*.*`,
+    `!${siteFolder}/angular/api/**/*.*`,
+    `!${siteFolder}/components/api/**/*.*`,
+  ];
+  console.log(`watching: ${watchList}`);
+  browserSync.init({
+    files: watchList,
+    port: argv.port || 4001,
+    reloadDelay: 100,
+    reloadDebounce: 100,
+    server: {
+      baseDir: siteFolder,
+      middleware: [superstatic({ stack: 'strict' })],
+    }
+  });
+});
+
 //=============================================================================
 // Helper functions
 //

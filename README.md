@@ -55,7 +55,7 @@ if you already have the required packages installed.
 > IMPORTANT: Any time you create a **new terminal/command window** to work on
 this repo, **repeat steps 1 and 2** above.
 
-## Building this site
+## Building the site
 
 Once everything is installed, you need to do a full site build at least once:
 
@@ -82,6 +82,25 @@ Some `gulp build` options include:
 - `--[no-]dartdoc[=all|acx|ng|forms|router|test]` &nbsp;&nbsp;# generates API docs for named packages (default `all`)
 - `--fast` &nbsp;&nbsp;# skips some one-time setup tasks (can spead up repeated builds)
 - `--log=x` &nbsp;&nbsp;# logging level: `debug`, `info`, `warn` (default), `error`
+
+## Serving the site
+
+To serve the generated site use:
+
+- `superstatic --port 4001`
+
+To view the generated site open [localhost:4001](http://localhost:4001) in a browser.
+
+### Browser sync (edit/site-rebuild/browser-sync cycle)
+
+Use the following command to rebuild the site incrementally
+(as you save changes to the docs), and have the browser page automatically
+refresh:
+
+- `./scripts/serve_local.sh`
+
+If you just want the incremental rebuild without the browser refresh,
+use the `--no-sync` option.
 
 ## Rebuilding this site from scratch
 
